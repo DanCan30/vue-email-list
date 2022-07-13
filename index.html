@@ -21,8 +21,8 @@
 
         <h1>API's Random e-mail generator</h1>
 
-        <ul>
-            <li v-for="(mail, index) in mails" v-if="mails.length === 10">
+        <ul v-if="mails.length === 10">
+            <li v-for="(mail, index) in mails">
                 {{ mail }}
             </li>
         </ul>
